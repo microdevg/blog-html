@@ -28,8 +28,14 @@ body {
     z-index: 10;
 }
 
-.title {
-    font-size: 1.5rem;
+.title a {
+    text-decoration: none; /* Quita la línea del enlace */
+    color: inherit; /* Hereda el color del elemento padre (opcional) */
+}
+
+/* Opcional: Estilos adicionales para el enlace */
+.title a:hover {
+    text-decoration: none; /* Agrega subrayado al pasar el cursor, si lo deseas */
 }
 
 .menu {
@@ -81,12 +87,86 @@ main {
     border-radius: 5px;
     overflow: auto; /* Si el contenido crece, agrega scroll */
 }
+
+
+.main-news{
+    margin-right:10px;
+    
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1.2fr 1fr ; /* Asides distribuidos en dos filas */
+    grid-gap: 1.2em;
+
+}
+.news {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.only-new img {
+    padding-top: 1rem;
+    width: 100%;
+    height: 30%;
+    max-height: 30vh; /* No exceder el 30% de la altura del viewport */
+    opacity: 0.995; /* Transparencia */
+
+    margin: auto;
+    aspect-ratio: 24 / 8; /* Relación de aspecto 24:8 */
+    object-fit: cover; /* Recorta la imagen para mantener el paisaje */
+    margin-bottom: 1rem; /* Espacio debajo de la imagen */
+   
+}
+
+.title-new{
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: #333 1px solid ;
+}
+
+.title-category{
+font-family:"Helvetica Neue",Helvetica;
+opacity: 0.4;
+
+}
+
+
+.news img {
+    width: 100%; 
+    aspect-ratio: 16 / 9; /* Relación de aspecto 16:9 */
+    object-fit: cover; /* Recorta la imagen para mantener el paisaje */
+    border-radius: 5px; /* Opcional, para darle estilo */
+    margin-bottom: 0.5rem; /* Espacio debajo de la imagen */
+    filter: brightness(0.7) blur(0.5px); /* Oscurece y difumina */
+    opacity: 0.90; /* Transparencia */
+    transition: transform 0.3s ease, filter 0.4s ease; /* Efectos al pasar el cursor */
+}
+
+
+
+
+.news img:hover {
+    transform: scale(1.01); /* Aumenta ligeramente el tamaño al pasar el cursor */
+    filter: brightness(1) blur(0px); /* Reduce el difuminado y aumenta el brillo */
+
+}
+
+
+
+
 /* Aside ocupa la segunda columna, en dos filas */
 aside {
     background: #f8f9fa;
     padding: 1rem;
     border-radius: 5px;
 }
+
+
+
+
 
 
 ul.tutoriales{
@@ -123,6 +203,14 @@ aside:nth-child(3) {
 
 /* Media queries */
 @media (max-width: 768px) {
+
+    .main-news{
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows: auto ; 
+        grid-gap: 1em;
+    }
+
     .menu {
         display: none;
         flex-direction: column;

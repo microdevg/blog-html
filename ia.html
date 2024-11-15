@@ -8,44 +8,80 @@
 </head>
 <body>
     <header class="navbar">
-        <h1 class="title">Blog de tecnologia </h1>
+        <h1 class="title"><a href="./index.html">Blog de tecnologia</a> </h1>
         <nav>
             <ul class="menu">
                 <li><a href="./embebidos.html">Sistemas embebidos</a></li>
-                <li><a href="#ia">Inteligencia artificial</a></li>
+                <li><a href="./ia.html">Inteligencia artificial</a></li>
                 <li><a href="./quantica.html">Computacion quantica</a></li>
-                <li><a href="#moviles">Tecnologias moviles</a></li>
-                <li><a href="#novedades">Novedades</a></li>
+                <li><a href="./moviles.html">Tecnologias moviles</a></li>
+                <li><a href="./index.html">Novedades</a></li>
             </ul>
             <button class="menu-toggle" aria-label="Mostrar menú">☰</button>
         </nav>
     </header>
     <div class="content">
         <main>
-            <h2>Computacion Quantica</h2>
-            <p>
-                Aqui hay info posta sobre computacion cuantica.
-            </p>
-        
-        
-        </main>
+            <h2>Lo ultimo</h2>
+            <div class="main-news">
+                <div class="news" data-url="./new.html">
+                    <h2>Noticia</h2>
+                    <img src="./imgs/new.jpeg" alt="No se encontro la imagen">
+                    <p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis ad sunt officia, corporis quae consequatur temporibus quibusdam eligendi laboriosam at autem odit, beatae magni, nostrum quidem labore enim vel!                    </p>
+                </div>
+                <div class="news" data-url="./new.html">
+                    <h2>Noticia</h2>
+                    <img src="./imgs/new.jpeg" alt="No se encontro la imagen">
+                    <p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis ad sunt officia, corporis quae consequatur temporibus quibusdam eligendi laboriosam at autem odit, beatae magni, nostrum quidem labore enim vel!                    </p>
+                </div>
+                <div class="news" data-url="./new.html">
+                    <h2>Noticia</h2>
+                    <img src="./imgs/new.jpeg" alt="No se encontro la imagen">
+                    <p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis ad sunt officia, corporis quae consequatur temporibus quibusdam eligendi laboriosam at autem odit, beatae magni, nostrum quidem labore enim vel!                    </p>
+                </div>
+                
+          
+            <div class="news">
+                <h2>Noticia</h2>
+                <img src="./imgs/new.jpeg" alt="No se encontro la imagen">
+                <p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis ad sunt officia, corporis quae consequatur temporibus quibusdam eligendi laboriosam at autem odit, beatae magni, nostrum quidem labore enim vel!                    </p>
+            </div>
+
+            </div>
+</main>
     
+
+        <aside>
+            <h3>Tutoriales</h3>
+            <ul class="tutoriales">
+                <li class="tutorial-item" ><a href="https://www.youtube.com/watch?v=0600Yp-R79w">IA para dummies</a></li>
+                <li class="tutorial-item" ><a href="https://www.youtube.com/watch?v=0600Yp-R79w">Python para IA</a></li>
+                <li class="tutorial-item" ><a href="https://www.youtube.com/watch?v=0600Yp-R79w">Introduccion a la Vision artificial</a></li>
+            </ul>
+        </aside>
         <aside>
             <h3>Novedades</h3>
             <p>Más datos útiles o enlaces.</p>
         </aside>
-        <aside>
-            <h3>Tutoriales</h3>
-            <ul class="tutoriales">
-                <li class="tutorial-item" ><a href="https://www.youtube.com/watch?v=0600Yp-R79w">Curso de computacion cuantica</a></li>
-                <li class="tutorial-item" ><a href="https://www.youtube.com/watch?v=0600Yp-R79w">Video tutorial de computacion cuantica</a></li>
-                <li class="tutorial-item" ><a href="https://www.youtube.com/watch?v=0600Yp-R79w">Articulo sobre computacion cuantica</a></li>
-            </ul>
-        </aside>
+    
      
     </div>
     <footer class="footer">
         <p>&copy; 2024 Blog de tecnologia. Todos los derechos reservados.</p>
     </footer>
+    <script>
+        document.querySelectorAll('.news').forEach(news => {
+    news.addEventListener('click', function () {
+        const url = this.dataset.url;
+        if (url) {
+            window.location.href = url;
+        }
+    });
+});
+    </script>
 </body>
 </html>

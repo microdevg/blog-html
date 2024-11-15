@@ -8,33 +8,48 @@
 </head>
 <body>
     <header class="navbar">
-        <h1 class="title">Blog de tecnologia </h1>
+        <h1 class="title"><a href="./index.html">Blog de tecnologia</a> </h1>
         <nav>
             <ul class="menu">
                 <li><a href="./embebidos.html">Sistemas embebidos</a></li>
-                <li><a href="#ia">Inteligencia artificial</a></li>
+                <li><a href="./ia.html">Inteligencia artificial</a></li>
                 <li><a href="./quantica.html">Computacion quantica</a></li>
                 <li><a href="./moviles.html">Tecnologias moviles</a></li>
-                <li><a href="#novedades">Novedades</a></li>
+                <li><a href="./index.html">Novedades</a></li>
             </ul>
             <button class="menu-toggle" aria-label="Mostrar menú">☰</button>
         </nav>
     </header>
     <div class="content">
         <main>
-            <h2>Tecnologias moviles</h2>
-            <p>
-                Aqui hay info posta sobre Tecnologias moviles.
-            </p>
-        
-        
+            <h2>Lo ultimo</h2>
+            <div class="main-news">
+                <div class="news" data-url="./new.html">
+                    <h2>Noticia</h2>
+                    <img src="./imgs/moviles.png" alt="No se encontro la imagen">
+                    <p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis ad sunt officia, corporis quae consequatur temporibus quibusdam eligendi laboriosam at autem odit, beatae magni, nostrum quidem labore enim vel!                    </p>
+            </div>
+                <div class="news" data-url="./new.html">
+                    <h2>Noticia</h2>
+                    <img src="./imgs/moviles.png" alt="No se encontro la imagen">
+                    <p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis ad sunt officia, corporis quae consequatur temporibus quibusdam eligendi laboriosam at autem odit, beatae magni, nostrum quidem labore enim vel!                    </p>
+                </div>
+                <div class="news" data-url="./new.html">
+                    <h2>Noticia</h2>
+                    <img src="./imgs/moviles.png" alt="No se encontro la imagen">
+                    <p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis ad sunt officia, corporis quae consequatur temporibus quibusdam eligendi laboriosam at autem odit, beatae magni, nostrum quidem labore enim vel!                    </p>
+                </div>
+            </div>
         </main>
         <aside>
             <h3>Tutoriales</h3>
             <ul class="tutoriales">
-                <li class="tutorial-item" ><a href="https://www.youtube.com/watch?v=0600Yp-R79w">Curso de computacion cuantica</a></li>
-                <li class="tutorial-item" ><a href="https://www.youtube.com/watch?v=0600Yp-R79w">Video tutorial de computacion cuantica</a></li>
-                <li class="tutorial-item" ><a href="https://www.youtube.com/watch?v=0600Yp-R79w">Articulo sobre computacion cuantica</a></li>
+                <li class="tutorial-item" ><a href="https://www.youtube.com/watch?v=0600Yp-R79w">Curso completo de Android</a></li>
+                <li class="tutorial-item" ><a href="https://www.youtube.com/watch?v=0600Yp-R79w">Compra tu primera Mac para programar</a></li>
+                <li class="tutorial-item" ><a href="https://www.youtube.com/watch?v=0600Yp-R79w">Flutter, que bien te ves</a></li>
             </ul>
         
         </aside>
@@ -47,5 +62,15 @@
     <footer class="footer">
         <p>&copy; 2024 Blog de tecnologia. Todos los derechos reservados.</p>
     </footer>
+    <script>
+        document.querySelectorAll('.news').forEach(news => {
+    news.addEventListener('click', function () {
+        const url = this.dataset.url;
+        if (url) {
+            window.location.href = url;
+        }
+    });
+});
+    </script>
 </body>
 </html>

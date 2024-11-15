@@ -8,27 +8,51 @@
 </head>
 <body>
     <header class="navbar">
-        <h1 class="title">Blog de tecnologia </h1>
+        <h1 class="title"><a href="./index.html">Blog de tecnologia</a> </h1>
         <nav>
             <ul class="menu">
                 <li><a href="./embebidos.html">Sistemas embebidos</a></li>
-                <li><a href="#ia">Inteligencia artificial</a></li>
+                <li><a href="./ia.html">Inteligencia artificial</a></li>
                 <li><a href="./quantica.html">Computacion quantica</a></li>
                 <li><a href="./moviles.html">Tecnologias moviles</a></li>
-                <li><a href="#novedades">Novedades</a></li>
+                <li><a href="./index.html">Novedades</a></li>
             </ul>
             <button class="menu-toggle" aria-label="Mostrar menú">☰</button>
         </nav>
     </header>
     <div class="content">
         <main>
-            <h2>Informacion de sistemas embebidos</h2>
-            <p>
-                Aqui hay info posta sobre sistemas embebidos.
-            </p>
-        
-        
-        </main>
+            <h2>Lo ultimo</h2>
+            <div class="main-news">
+                <div class="news" data-url="./new.html">
+                    <h2>Noticia</h2>
+                    <img src="./imgs/emb.jpeg" alt="No se encontro la imagen">
+                    <p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis ad sunt officia, corporis quae consequatur temporibus quibusdam eligendi laboriosam at autem odit, beatae magni, nostrum quidem labore enim vel!                    </p>
+                </div>
+                <div class="news" data-url="./new.html">
+                    <h2>Noticia</h2>
+                    <img src="./imgs/emb.jpeg" alt="No se encontro la imagen">
+                    <p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis ad sunt officia, corporis quae consequatur temporibus quibusdam eligendi laboriosam at autem odit, beatae magni, nostrum quidem labore enim vel!                    </p>
+                </div>
+                <div class="news" data-url="./new.html">
+                    <h2>Noticia</h2>
+                    <img src="./imgs/emb.jpeg" alt="No se encontro la imagen">
+                    <p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis ad sunt officia, corporis quae consequatur temporibus quibusdam eligendi laboriosam at autem odit, beatae magni, nostrum quidem labore enim vel!                    </p>
+                </div>
+                
+          
+            <div class="news">
+                <h2>Noticia</h2>
+                <img src="./imgs/emb.jpeg" alt="No se encontro la imagen">
+                <p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis ad sunt officia, corporis quae consequatur temporibus quibusdam eligendi laboriosam at autem odit, beatae magni, nostrum quidem labore enim vel!                    </p>
+            </div>
+
+            </div>
+</main>
      
         <aside>
             <h3>Topicos</h3>
@@ -49,5 +73,15 @@
     <footer class="footer">
         <p>&copy; 2024 Blog de tecnologia. Todos los derechos reservados.</p>
     </footer>
+    <script>
+        document.querySelectorAll('.news').forEach(news => {
+    news.addEventListener('click', function () {
+        const url = this.dataset.url;
+        if (url) {
+            window.location.href = url;
+        }
+    });
+});
+    </script>
 </body>
 </html>
