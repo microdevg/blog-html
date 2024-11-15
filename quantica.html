@@ -10,6 +10,8 @@
     <header class="navbar">
         <h1 class="title"><a href="./index.html">Blog de tecnologia</a> </h1>
         <nav>
+            <button class="menu-toggle" aria-label="Mostrar menú">☰</button>
+
             <ul class="menu">
                 <li><a href="./embebidos.html">Sistemas embebidos</a></li>
                 <li><a href="./ia.html">Inteligencia artificial</a></li>
@@ -17,7 +19,6 @@
                 <li><a href="./moviles.html">Tecnologias moviles</a></li>
                 <li><a href="./index.html">Novedades</a></li>
             </ul>
-            <button class="menu-toggle" aria-label="Mostrar menú">☰</button>
         </nav>
     </header>
     <div class="content">
@@ -71,6 +72,16 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+
+    toggleButton.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+});
+
     </script>
 </body>
 </html>

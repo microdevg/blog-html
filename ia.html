@@ -82,6 +82,15 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+
+    toggleButton.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+});
     </script>
 </body>
 </html>

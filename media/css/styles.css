@@ -214,21 +214,41 @@ aside:nth-child(3) {
     .menu {
         display: none;
         flex-direction: column;
-        background-color: #333;
+        background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con 70% de opacidad */
         position: absolute;
         top: 100%;
         right: 0;
-        left: 0;
+        width: 100%;
+        padding: 0.5rem 0; /* Reduce el espacio interno */
+        backdrop-filter: blur(2px); /* Suaviza el desenfoque para que sea menos invasivo */
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu li {
+        text-align: center;
+        padding: 0.3rem 0; /* Reduce el espacio entre los elementos */
+    }
+
+    .menu li a {
+        font-size: 0.9rem; /* Reduce el tamaño de la fuente */
     }
 
     .menu-toggle {
         display: block;
     }
+}
 
-    .menu.show {
-        display: flex;
-    }
+/* Navbar general */
+.navbar {
+    padding: 0.5rem 1rem; /* Hace el navbar más compacto */
+}
 
+.navbar .title a {
+    font-size: 1.2rem; /* Reduce el tamaño del título */
+}
     .content {
         grid-template-columns: 1fr;
     }
