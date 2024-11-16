@@ -239,9 +239,9 @@ aside:nth-child(3) {
     .menu-toggle {
         display: block;
     }
-}
 
-/* Navbar general */
+
+    /* Navbar general */
 .navbar {
     padding: 0.5rem 1rem; /* Hace el navbar más compacto */
 }
@@ -257,3 +257,6 @@ aside:nth-child(3) {
         display: none;
     }
 }
+
+
+
