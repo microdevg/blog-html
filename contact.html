@@ -18,6 +18,8 @@
                 <li><a href="./quantica.html">Computacion cuantica</a></li>
                 <li><a href="./moviles.html">Tecnologias moviles</a></li>
                 <li><a href="./index.html">Novedades</a></li>
+                <li><a href="./contact.html">Contacto</a></li>
+
             </ul>
         </nav>
     </header>
@@ -25,22 +27,50 @@
         <main>
         
                 <div class="only-new">
-    <h2 class="title-category">Computadoras cuanticas</h2>
+    <h2 class="title-category">Formulario de contacto</h2>
 
-                    <img src="./imgs/cuantica.jpg" alt="No se encontro la imagen">
-                    <h3 class="title-new">Computadora cuantica argentina</h3>
 
-     <p> En un sorprendente avance tecnológico, investigadores del Polo Científico-Tecnológico de 
-                    La Matanza, Buenos Aires, han desarrollado la primera computadora cuántica 100% argentina. 
-                    Este innovador equipo promete revolucionar industrias como la farmacéutica, la inteligencia 
-                    artificial y la ciberseguridad, con capacidades de procesamiento millones de veces superiores 
-                    a las de las computadoras tradicionales. </p> <p> El proyecto, financiado por universidades locales y el sector privado, ha sido aclamado internacionalmente por su enfoque en reducir los costos de producción y democratizar el acceso a la computación cuántica. Los desarrolladores afirman que esta tecnología también está diseñada para 
-                        operar en climas variables, adaptándose perfectamente a la región. </p> 
-    <h4>Más sobre la noticia</h4> 
-    <p> Este logro posiciona a Argentina como un referente en innovación cuántica en América Latina,
-         abriendo puertas a nuevos convenios internacionales y fomentando la creación de empleo 
-         calificado en el país. </p>
+    <div>
+           
+        <form class = "form" action="">
+            
+       
+            <div   class="form_input" >
+                <label for="name">Nombre</label>
+                <input  type="text" name="name" id="name" required placeholder="El Barto">
+            </div> 
+            <div   class="form_input" >
+                <label for="email">Correo electrónico</label>
+                <input  type="email" name="email" id="email" placeholder="elbarto@gmail.com">
+            </div >
+            
+            
+            <div class="form_input">
+                <label for="asunto">Asunto</label>
+                <select name="asunto">
+                    <option value="ppersonalizados">Embebidos</option>
+                    <option value="sposventa">Inteligencia Artificial</option>
+                    <option value="capacitaciones">Computacion cuantica</option>
+                    <option value="otros">Tecnologias moviles</option>
+                    <option value="otros">Otros</option>
+
+                </select>
+            </div>
+            <div   class="form_input" >
+                <label for="comentarios">Consulta</label>
+                <textarea class="comentarios" name="comentarios" 
+                           id="comentarios"
+                           placeholder="Escribe tu mensaje aqui ..."></textarea> 
+            </div>
+            <div   class="form_input submit-botton" >
+                <input  type="submit" class = "submit-botton"value="Enviar">
+            </div>  
+                
+        </form>
+        
     
+    
+        </div>
     
 
 

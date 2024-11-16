@@ -201,6 +201,93 @@ aside:nth-child(3) {
     width: 100%;
 }
 
+
+
+form{
+    min-width: 320px ;
+    padding: 2% 1%;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(245, 243, 243, 0.6);
+    margin-top: 50px;
+}
+
+.form_input {
+    width: 100%;
+    background-color: transparent;
+
+}
+
+.form_name{
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+label{
+    font-size: 0.9em;
+    padding: 0 0 20px 2px;
+    line-height: 2;
+}
+    
+
+
+input{
+    background-color: #0009;
+    color:whitesmoke;
+
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border:none;
+    border-left: 3px solid #666;
+    box-shadow: 0px 0px 15px #0002;
+    border: 1px solid #999;
+    border-radius: 2px;
+    margin: 2px;
+}
+
+.form_name{
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+.submit-botton{
+    border:1px solid #000 ;
+    box-sizing: border-box;
+    margin: 1px auto;;
+
+}
+
+
+
+option{
+    margin: 200px;
+    background-color: #000;
+    color: white;
+}
+
+input ,textarea, select{
+    color: whitesmoke;
+    background-color:      #111D;
+
+    width: 100%;
+    box-sizing: border-box;
+}
+textarea{
+    min-width:100% ;
+
+    min-height: 100px;
+    max-height: 200px;
+    resize: vertical;
+    
+    font-family: sans-serif;
+
+}
+
+
+
 /* Media queries */
 @media (max-width: 768px) {
 
